@@ -24,9 +24,21 @@ git clone https://github.com/Esteban795/k-gram.git
 ```ps
 make all
 ``` 
+<br/>
 
+## How to use it ? 
+
+- Build it using `make build` command. Then, just 
+
+```ps 
+./ngrams filename N initial_string len
+``` 
+where N is the largest N-gram you want to create, initial string is where the algorithm will start from and len is the length of the text you want to auto-generate.
+
+- You can get an example by just running `make all`.
+<br/>
 
 ## What's left to do ?
 
-- Optimize
+- Optimize (mostly comes down to storing occurences better, probably through a larger array, to avoid recalculating it each time).
 - Multithreading the model creation, which can become long depending on parameters.
